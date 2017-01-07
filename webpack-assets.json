@@ -1,0 +1,6 @@
+{
+  "application": {
+    "js": "/assets/bundle-application.js",
+    "css": "/assets/bundle-application.css"
+  }
+}

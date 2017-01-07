@@ -1,0 +1,2 @@
+class WebApiController < ApplicationController
+end
