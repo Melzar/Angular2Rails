@@ -1,6 +1,5 @@
 {
   "application": {
-    "js": "/assets/bundle-application.js",
-    "css": "/assets/bundle-application.css"
+    "js": "http://localhost:3500/assets/bundle-application.js"
   }
 }
