@@ -26,3 +26,5 @@ This project is a base integration of `Angular 2 / Angular-CLI` and `Ruby on Rai
 4. For production compile assets on deploy
         
         npm run build:production
+        
+5. Project is not configured for frontend unit tests         
