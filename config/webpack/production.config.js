@@ -33,7 +33,7 @@ module.exports = {
   plugins: [
     // Creates separate manifest for production
     new AssetsPlugin({
-      prettyPrint: true, filename: 'webpack-assets-deploy.json'
+      prettyPrint: true, filename: 'webpack-assets-compiled.json'
     }),
 
     // Extacts CSS to stanalone file

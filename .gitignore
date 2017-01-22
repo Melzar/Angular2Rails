@@ -27,4 +27,5 @@
 # Added by webpacked
 /node_modules
 /public/assets
-webpack-assets-deploy.json
+webpack-assets-compiled.json
+npm-debug.log

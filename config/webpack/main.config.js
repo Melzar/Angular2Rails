@@ -5,5 +5,5 @@ const env = process.env.NODE_ENV || 'development'
 
 module.exports = merge(
   require('./base.config.js'),
-  require(`./${env}.config.js`)
+  require('./'+env+'.config.js')
 )

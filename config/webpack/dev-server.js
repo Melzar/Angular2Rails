@@ -4,10 +4,10 @@ const config = require('./main.config')
 const webpackDevHost = process.env.WEBPACK_DEV_HOST || 'localhost'
 const webpackDevPort = process.env.WEBPACK_DEV_PORT || 3500
 
-config.output.publicPath = `http://${webpackDevHost}:${webpackDevPort}/assets/`;
+config.output.publicPath = 'http://'+webpackDevHost+':'+webpackDevPort+'/assets/';
 for (var entryName in config.entry) {
   config.entry[entryName].push(
-    `webpack-dev-server/client?http://${webpackDevHost}:${webpackDevPort}`,
+    'webpack-dev-server/client?http://'+webpackDevHost+':'+webpackDevPort,
     'webpack/hot/only-dev-server'
   )
 }
@@ -36,6 +36,6 @@ new WebpackDevServer(webpack(config), {
 }).listen(webpackDevPort, webpackDevHost, function (err, result) {
   if (err) console.log(err)
   console.log(
-    `=> 🔥  Webpack development server is running on port ${webpackDevPort}`
+    '=> 🔥  Webpack development server is running on port '+webpackDevPort
   )
 })
