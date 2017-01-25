@@ -6,6 +6,10 @@ import { HttpModule } from '@angular/http';
 import {HomeModule} from "./home/home.module";
 
 import { AppComponent } from './app.component';
+import { LayoutModule } from "./common/component/layout/layout.module";
+import { LocationStrategy, HashLocationStrategy } from "@angular/common";
+import { RouterModule } from "@angular/router";
+import { ROUTES } from "./app.routes";
 
 @NgModule({
   declarations: [
@@ -15,9 +19,19 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    HomeModule
+
+    // App Views
+    HomeModule,
+
+    // App layouts
+    LayoutModule,
+
+    // Routes
+    RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
