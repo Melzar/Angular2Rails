@@ -76,5 +76,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.public_file_server.enabled = true
-  config.webpacked.manifest_path = 'webpack-assets-deploy.json'
+  config.webpacked.manifest_path = 'webpack-assets-compiled.json'
 end

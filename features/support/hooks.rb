@@ -1,3 +1,5 @@
 Before do
-  system('npm run build:production')
+  if Rails.env.development?
+    system('npm run build:production')
+  end
 end 
